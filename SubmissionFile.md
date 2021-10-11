@@ -3,26 +3,27 @@
 #### Step 1: Google Dorking
 
 
-- Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
+- Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is: **Karl Fitzgerald**
 
-- How can this information be helpful to an attacker:
+- How can this information be helpful to an attacker: **By using Karl ass a target to gain access to the maximum amount of company info.** 
 
 
 #### Step 2: DNS and Domain Discovery
 
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
-  1. Where is the company located: 
+  1. Where is the company located: **Sunnyvale, CA**
 
-  2. What is the NetRange IP address:
+  2. What is the NetRange IP address:**65.61.137.64 - 65.61.137.127**
 
-  3. What is the company they use to store their infrastructure:
+  3. What is the company they use to store their infrastructure: **Rackspace Backbone Engineering**
 
-  4. What is the IP address of the DNS server:
+  4. What is the IP address of the DNS server:**65.61.137.117**
+
 
 #### Step 3: Shodan
 
-- What open ports and running services did Shodan find:
+- What open ports and running services did Shodan find: **Ports: 80, 443, 8080** **Services: Apache Tomcat, Coyote JSP Engine**
 
 #### Step 4: Recon-ng
 
@@ -30,13 +31,14 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 - Set the source to `demo.testfire.net`. 
 - Run the module. 
 
-Is Altoro Mutual vulnerable to XSS: 
+Is Altoro Mutual vulnerable to XSS: **Yes, it is the only vulnerablility ** 
+
 
 ### Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
-- Command for Zenmap to run a service scan against the Metasploitable machine: 
+- Command for Zenmap to run a service scan against the Metasploitable machine: **nmap -T4 -A 192.168.0.10**
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
