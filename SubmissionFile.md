@@ -5,7 +5,7 @@
 
 - Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is: **Karl Fitzgerald**
 
-- How can this information be helpful to an attacker: **By using Karl ass a target to gain access to the maximum amount of company info.** 
+- How can this information be helpful to an attacker: **By using Karl as a target to gain access to the maximum amount of company info avaliable.** 
 
 
 #### Step 2: DNS and Domain Discovery
