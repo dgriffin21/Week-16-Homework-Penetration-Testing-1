@@ -42,13 +42,17 @@ Your client has asked that you help identify any vulnerabilities with their file
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
 
-- Zenmap vulnerability script command: 
+- Zenmap vulnerability script command:
+  **nmap --script samba-vuln-cve-2012-1182 192.168.0.10**
+
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
+  **(Samba) SMB 3**
 
   2. Why is it dangerous:
+  3.**Samba versions 3.6.3 and all  previous are affected by a vulnerability that allows remote code execution as the “root” user from an anonymous connections.
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
-
+  **Block all inbound SMB traffic by using the Windows Defender Firewall to prevent remote connections from malicious or compromised devices, for Windows clients and servers that do not host SMB shares.**
 ---
